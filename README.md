@@ -7,8 +7,8 @@
 
 ```shell
 # 1. clone repo
-git clone https://github.com/jinlovespho/DiffBIR.git -b ocr_plantynet
-cd DiffBIR 
+git clone https://github.com/jinlovespho/OCR_PlantyNet.git
+cd OCR_PlantyNet
 
 # 2. create environment
 conda create -n pho_ocr_plantynet python=3.10 -y
@@ -33,6 +33,6 @@ pip3 install -e .
 
 ### Run Validation script 
 ```shell
-cd DiffBIR
+cd OCR_PlantyNet
 bash run_script/val_script/run_val_diffbir_sam_try1.sh
 ```
