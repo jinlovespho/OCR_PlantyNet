@@ -113,6 +113,8 @@ def main(args):
 
         print('OCR inference time for each sampling steps: ', inference_time)           # mili-second
         print('OCR Avg inference time: ', sum(inference_time)/len(inference_time))
+        ocr_tot_params=sum(i.numel() for i in models['testr'].testr.parameters()) /1e6  # 23.65M
+        print('OCR tot num param: ', ocr_tot_params)
 
 
 
